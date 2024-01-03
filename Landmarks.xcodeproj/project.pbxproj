@@ -134,12 +134,12 @@
 		8ACEAF7D2B442724005D4A81 /* Landmarks */ = {
 			isa = PBXGroup;
 			children = (
-				8AB813DC2B45771C000ECD11 /* Resources */,
-				8AB813DB2B4576B6000ECD11 /* Model */,
-				8AB813DA2B457682000ECD11 /* Views */,
-				8ACEAF7E2B442724005D4A81 /* LandmarksApp.swift */,
 				8ACEAF822B442727005D4A81 /* Assets.xcassets */,
+				8ACEAF7E2B442724005D4A81 /* LandmarksApp.swift */,
+				8AB813DB2B4576B6000ECD11 /* Model */,
 				8ACEAF842B442727005D4A81 /* Preview Content */,
+				8AB813DC2B45771C000ECD11 /* Resources */,
+				8AB813DA2B457682000ECD11 /* Views */,
 			);
 			path = Landmarks;
 			sourceTree = "<group>";

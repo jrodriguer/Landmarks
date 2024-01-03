@@ -9,9 +9,7 @@ import SwiftUI
 
 struct LandmarkList: View {
     var body: some View {
-        List(landmarks, id: \.id) { landmark in
-            // Data identifiable.
-            // Key path to a property that uniquely identifies each element.
+        List(landmarks) { landmark in
             LandmarkRow(landmark: landmark)
         }
     }

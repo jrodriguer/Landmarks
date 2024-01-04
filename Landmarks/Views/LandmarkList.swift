@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct LandmarkList: View {
-    @State private var showFavoritesOnly = true
+    @State private var showFavoritesOnly = false
     
     var filteredLandmarks: [Landmark] {
         landmarks.filter { landmark in
@@ -31,6 +31,7 @@ struct LandmarkList: View {
                     }
                 }
             }
+            .animation(.default, value: filteredLandmarks)
             .navigationTitle("Landmarks")
         } detail: {
             Text("Select a Landmark")

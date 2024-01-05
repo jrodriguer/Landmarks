@@ -9,32 +9,37 @@ import SwiftUI
 
 struct BadgeBackground: View {
     var body: some View {
-        GeometryReader {geometry in
+        GeometryReader { geometry in
             Path { path in
                 var width: CGFloat = min(geometry.size.width, geometry.size.height)
                 let height = width
+                let xScale: CGFloat = 0.832
+                let xOffset = (width * (1.0 - xScale)) / 2.0
+                width *= xScale
                 path.move(
                     to: CGPoint(
-                        x: width * 0.95,
+                        x: width * 0.95 + xOffset,
                         y: height * (0.20 + HexagonParameters.adjustment)
                     )
                 )
                 
+                
                 HexagonParameters.segments.forEach { segment in
                     path.addLine(
                         to: CGPoint(
-                            x: width * segment.line.x,
+                            x: width * segment.line.x + xOffset,
                             y: height * segment.line.y
                         )
                     )
                     
+                    
                     path.addQuadCurve(
                         to: CGPoint(
-                            x: width * segment.curve.x,
+                            x: width * segment.curve.x + xOffset,
                             y: height * segment.curve.y
                         ),
                         control: CGPoint(
-                            x: width * segment.control.x,
+                            x: width * segment.control.x + xOffset,
                             y: height * segment.control.y
                         )
                     )
@@ -44,6 +49,7 @@ struct BadgeBackground: View {
         }
     }
 }
+
 
 #Preview {
     BadgeBackground()

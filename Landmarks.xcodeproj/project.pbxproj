@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8A151ECB2B447E3D003D11A5 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A151ECA2B447E3D003D11A5 /* CircleImage.swift */; };
+		8A9775B22B49BA9D0097231E /* hikeData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8A9775B12B49BA9D0097231E /* hikeData.json */; };
 		8AB813D12B455217000ECD11 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB813D02B455217000ECD11 /* MapView.swift */; };
 		8AB813D52B456B0B000ECD11 /* landmarkData.json in Resources */ = {isa = PBXBuildFile; fileRef = 8AB813D42B456B0B000ECD11 /* landmarkData.json */; };
 		8AB813D72B456B5C000ECD11 /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AB813D62B456B5C000ECD11 /* Landmark.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		8A151ECA2B447E3D003D11A5 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		8A9775B12B49BA9D0097231E /* hikeData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hikeData.json; sourceTree = "<group>"; };
 		8AB813D02B455217000ECD11 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		8AB813D42B456B0B000ECD11 /* landmarkData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = landmarkData.json; sourceTree = "<group>"; };
 		8AB813D62B456B5C000ECD11 /* Landmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		8AB813DC2B45771C000ECD11 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8A9775B12B49BA9D0097231E /* hikeData.json */,
 				8AB813D42B456B0B000ECD11 /* landmarkData.json */,
 			);
 			path = Resources;
@@ -304,6 +307,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A9775B22B49BA9D0097231E /* hikeData.json in Resources */,
 				8ACEAF862B442727005D4A81 /* Preview Assets.xcassets in Resources */,
 				8ACEAF832B442727005D4A81 /* Assets.xcassets in Resources */,
 				8AB813D52B456B0B000ECD11 /* landmarkData.json in Resources */,

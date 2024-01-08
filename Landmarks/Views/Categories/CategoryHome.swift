@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct CategoryHome: View {
+    @Environment(ModelData.self) var modelData
+    
     var body: some View {
         NavigationSplitView {
             Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
@@ -20,4 +22,5 @@ struct CategoryHome: View {
 
 #Preview {
     CategoryHome()
+        .environment(ModelData())
 }

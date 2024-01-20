@@ -33,6 +33,7 @@
 		8ACEAF9A2B442727005D4A81 /* LandmarksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACEAF992B442727005D4A81 /* LandmarksUITests.swift */; };
 		8ACEAF9C2B442727005D4A81 /* LandmarksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ACEAF9B2B442727005D4A81 /* LandmarksUITestsLaunchTests.swift */; };
 		8AE7EBDA2B5AFF63007A4BF1 /* CategoryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7EBD92B5AFF63007A4BF1 /* CategoryRow.swift */; };
+		8AE7EBDC2B5C50CF007A4BF1 /* CategoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE7EBDB2B5C50CF007A4BF1 /* CategoryItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		8ACEAF992B442727005D4A81 /* LandmarksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksUITests.swift; sourceTree = "<group>"; };
 		8ACEAF9B2B442727005D4A81 /* LandmarksUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarksUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		8AE7EBD92B5AFF63007A4BF1 /* CategoryRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryRow.swift; sourceTree = "<group>"; };
+		8AE7EBDB2B5C50CF007A4BF1 /* CategoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			children = (
 				8A8EF2442B4CAE4C00402584 /* CategoryHome.swift */,
 				8AE7EBD92B5AFF63007A4BF1 /* CategoryRow.swift */,
+				8AE7EBDB2B5C50CF007A4BF1 /* CategoryItem.swift */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -391,6 +394,7 @@
 				8A4E22AD2B49C16E006D71C6 /* HikeGraph.swift in Sources */,
 				8AB813D92B456FB2000ECD11 /* ModelData.swift in Sources */,
 				8A4E22AE2B49C16E006D71C6 /* HikeDetail.swift in Sources */,
+				8AE7EBDC2B5C50CF007A4BF1 /* CategoryItem.swift in Sources */,
 				8AE7EBDA2B5AFF63007A4BF1 /* CategoryRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

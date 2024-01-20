@@ -17,9 +17,11 @@ struct CategoryRow: View {
             .padding(.leading, 15)
             .padding(.top, 5)
         
-        HStack(alignment: .top, spacing: 0) {
-            ForEach(items) { landmark in
-                Text(landmark.name)
+        ScrollView(.horizontal, showsIndicators: false) {
+            HStack(alignment: .top, spacing: 0) {
+                ForEach(items) { landmark in
+                    Text(landmark.name)
+                }
             }
         }
     }

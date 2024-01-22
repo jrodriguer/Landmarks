@@ -12,9 +12,10 @@ struct PageView: View {
 
     var body: some View {
         PageViewController(pages: pages)
+            .aspectRatio(3 / 2, contentMode: .fit)
     }
 }
 
 #Preview {
-    PageView()
+    PageView(pages: ModelData().features.map { FeatureCard(landmark: $0) })
 }

@@ -13,6 +13,10 @@ import UIKit
 struct PageViewController<Page: View>: UIViewControllerRepresentable {
     var pages: [Page]
     
+    func makeCoordinator() -> Coordinator {
+        Coordinator(self)
+    }
+    
     ///
     /// Method that creates a UIPageViewController with the desired configuration.
     func makeUIViewController(context: Context) -> UIPageViewController {
@@ -26,7 +30,17 @@ struct PageViewController<Page: View>: UIViewControllerRepresentable {
     ///
     /// setViewControllers(_:direction:animated:) to provide a view controller for display.
     func updateUIViewController(_ pageViewController: UIPageViewController, context: Context) {
-            pageViewController.setViewControllers(
-                [UIHostingController(rootView: pages[0])], direction: .forward, animated: true)
+        pageViewController.setViewControllers(
+            [context.coordinator.controllers[0]], direction: .forward, animated: true)
+    }
+    
+    class Coordinator: NSObject {
+        var parent: PageViewController
+        var controllers = [UIViewController]()
+        
+        init(_ pageViewController: PageViewController) {
+            parent = pageViewController
+            controllers = parent.pages.map { UIHostingController(rootView: $0) }
         }
+    }
 }

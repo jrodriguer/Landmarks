@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct PageView: View {
+    var pages: [Page]
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        PageViewController(pages: pages)
     }
 }
 
